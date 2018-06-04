@@ -5,10 +5,11 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-const { DATABASE_URL, PORT } = require('./config');
-const { BlogPost } = require('./models');
+const DATABASE_URL = process.env.DATABASE_URL || 'mongodb://localhost/blog-app';
+const PORT = process.env.PORT || 8080;
 
 const app = express();
+const {BlogPost}=require('./models');
 
 app.use(morgan('common'));
 app.use(express.json());
