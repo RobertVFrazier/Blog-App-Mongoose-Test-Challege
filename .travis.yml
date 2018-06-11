@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: mP2I/o2693fW37AE2DNOvXjz9lOZ7D02exNhFJo/ejFc84YMvODueNZi9xra8Lj3TT3Z8y8pRnrZXAcXH59I9W81kqe/YaqLAHOItTRnHmIBq4CimsbTyaUPFnDCROGTw2mZIOOEIYBjYqmTsXU+sq41l+fHCV4tVDVQJLVDzmjtygeHxNjFUIDn3fCO+s6EnYTc+ivT1u9cXl+iq7UiCNZQOM+D8YZgXt++KybY9xVeOjoKfqsCj/tbfvO5ME2FynDKpjC5d6x4kg3UcD2akpaDrCuqqBYZ9YYnkH7drOT8odaYxPRw9fBdkjKWwY95uAWMGCKnLrvMlrjPcj4/XC18HYc56aLryVLJ6Yi3nHEu8O0f4c6Wo9y/Qh1+C/15ODOXz8ySfy6AG/XfNX9cyCcTq8JxZRjqluJB8HCX6J8/h1aBdIgi5IszfsZiDDweokkrlqhF4WlEcZVDvf8E+q6hfPxYPkmCszjGq9qq0Y6p6jBIEA2wqWOubPvsX9HLkJCLyRf0i/HkvoDTUuVKllkGjlMrDVPHDrXyxoobG67gZUAWPetBa1JsuJ56RMnz4O25NHFpFipilLgPNOQtij/zU+yo2IIxl2iq8cyUXjUjTVepctjyJ/f4Aa1yrTVogKTVGX9xIsvQMv5DkvvIfHNQ4uV6rPEbqg9g2MyG9sU=
+  app: glacial-depths-39608
+  on:
+    repo: RobertVFrazier/Blog-App-Mongoose-Test-Challege
